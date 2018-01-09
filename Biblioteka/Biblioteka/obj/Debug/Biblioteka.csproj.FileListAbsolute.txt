@@ -1,0 +1,6 @@
+c:\users\adam\documents\visual studio 2013\Projects\Biblioteka\Biblioteka\bin\Debug\Biblioteka.exe.config
+C:\Users\Adam\Documents\Visual Studio 2013\Projects\Biblioteka\Biblioteka\obj\Debug\Biblioteka.csprojResolveAssemblyReference.cache
+C:\Users\Adam\Documents\Visual Studio 2013\Projects\Biblioteka\Biblioteka\bin\Debug\Biblioteka.exe
+C:\Users\Adam\Documents\Visual Studio 2013\Projects\Biblioteka\Biblioteka\bin\Debug\Biblioteka.pdb
+C:\Users\Adam\Documents\Visual Studio 2013\Projects\Biblioteka\Biblioteka\obj\Debug\Biblioteka.exe
+C:\Users\Adam\Documents\Visual Studio 2013\Projects\Biblioteka\Biblioteka\obj\Debug\Biblioteka.pdb
