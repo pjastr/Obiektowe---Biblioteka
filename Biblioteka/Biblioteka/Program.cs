@@ -8,12 +8,12 @@ namespace Biblioteka
 {
     class Program
     {
-        private static Katalog test = new Katalog("nowości");
+        
+
+
         static void Main(string[] args)
         {
-            test.Test();
-            test.WypiszWszystko();
-            Console.ReadKey();
+            //tu jest to zbędne jeśli robimy klasę aplikację
             Aplikacja.WykonajDzialanie();
             
         }

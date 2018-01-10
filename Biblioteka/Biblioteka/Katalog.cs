@@ -14,24 +14,25 @@ namespace Biblioteka
             get { return dzialTematyczny; }
             set { dzialTematyczny = value; }
         }
-         static List<Pozycja> pozycje=new List<Pozycja>();
+
+        List<Pozycja> pozycje=new List<Pozycja>();  //te pole nie może być statyczne
 
         public Katalog(string dzialTematyczny)
         {
             this.dzialTematyczny = dzialTematyczny;
         }
         
-        public static void DodajPozycje(string tytul, int id, string wydawnictwo, int rokWydania, int numer)
+        public void DodajPozycje(string tytul, int id, string wydawnictwo, int rokWydania, int numer)  //tu nie ma być static
         {
             pozycje.Add(new Czasopismo(tytul, id, wydawnictwo, rokWydania, numer));
         }
 
-        public static void DodajPozycje(string tytul, int id, string wydawnictwo, int rokWydania, int liczbaStron,string imie,string nazwisko)
+        public void DodajPozycje(string tytul, int id, string wydawnictwo, int rokWydania, int liczbaStron,string imie,string nazwisko) //tu nie ma być static
         {
             pozycje.Add(new Ksiazka (tytul, id, wydawnictwo, rokWydania,liczbaStron,imie,nazwisko));
         }
         
-        public void Nowe()
+        public void Nowe()  //czy to tu potrzebne?
         {
             string  tytul, wydawnictwo;
             int id=-1;
@@ -93,7 +94,7 @@ namespace Biblioteka
             DodajPozycje(tytul, id, wydawnictwo, rokWydania, numer); 
         }
 
-        public void Nowa()
+        public void Nowa() //czy to tu potrzebne?
         {
             string tytul, wydawnictwo,imie,nazwisko;
             int id=-1;
@@ -170,7 +171,7 @@ namespace Biblioteka
             }
         }
 
-        public void PodajTytul()
+        public void PodajTytul() //tutaj tez nie bardzo miejsce na to
         {
             string tytul;
             Console.WriteLine("Podaj tytul, a ja poszukam pozycji.");
@@ -179,7 +180,7 @@ namespace Biblioteka
 
         }
 
-        public void WyszukajPoTytule(string tytul)
+        public void WyszukajPoTytule(string tytul) 
         {
             for(int i=0;i<pozycje.Count;i++)
             {
@@ -188,7 +189,7 @@ namespace Biblioteka
             }
         }
 
-        public void PodajId()
+        public void PodajId() //tu też złe miejsce na to
         {
             int id=-1;
             Console.WriteLine("Podaj Id, a ja wyszukam pozycje.");

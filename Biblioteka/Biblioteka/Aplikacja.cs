@@ -10,6 +10,11 @@ namespace Biblioteka
     {
         private static char klawisz;
         private static Katalog katalog = new Katalog("starocie");
+
+        static Aplikacja()
+        {
+            katalog.Test(); // tu jest dobre miejsce już na wywołanie metody test
+        }
         private static void PobierzKlawisz()
         {
             Console.WriteLine("Co chcesz zrobić? Wybierz klawisz i zatwierdź enterem.");
